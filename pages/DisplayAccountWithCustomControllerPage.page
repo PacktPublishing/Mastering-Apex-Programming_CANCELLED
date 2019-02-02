@@ -1,0 +1,19 @@
+<!-- 
+    @name: DisplayAccountWithCustomControllerPage
+    @description: to show Account records using Custom Controller
+    @author: Santanu Pal
+    @date: 2 JAN 2019
+    
+    CopyRight (c) 2019  
+-->
+
+<apex:page controller="DisplayAccountWithCustomController">
+  <apex:pageblock >
+      <apex:pageBlockTable value="{!accounts}" var="acc">
+          <apex:column value="{!acc.Name}"/>
+          <apex:column value="{!acc.AccountNumber}"/>
+          <apex:column value="{!acc.Type}"/>
+          <apex:column value="{!acc.Industry}"/>
+      </apex:pageBlockTable>
+  </apex:pageblock>
+</apex:page>
