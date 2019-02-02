@@ -8,5 +8,7 @@
 -->
 
 <apex:page StandardController="Account">
-    <apex:detail subject="{!Account.Id}"/>
+    <apex:outputPanel rendered="{!$ObjectType.Account.accessible}">
+        <apex:detail subject="{!Account.Id}"/>
+    </apex:outputPanel>
 </apex:page>
