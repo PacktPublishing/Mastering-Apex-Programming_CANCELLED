@@ -1,0 +1,41 @@
+<!-- 
+    @name: ShowAllContactsPage
+    @description: to make the custom list view of Contact with inline editing and pagination
+    @author: Santanu Pal
+    @date: 4 JAN 2019
+    
+    Copyright (c) 2019  
+-->
+<apex:page standardController="Contact" recordSetvar="contacts">
+  <apex:pageBlock title="Contacts">
+  <apex:form id="myform">  
+       <apex:panelGrid columns="2">
+          <apex:outputLabel value="View:"/>
+          <apex:selectList value="{!filterId}" size="1">
+            <apex:actionSupport event="onchange" rerender="contactTableId"/>
+            <apex:selectOptions value="{!listviewoptions}"/>
+          </apex:selectList>
+       </apex:panelGrid>
+       <apex:pageBlock >
+          <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Quick Save" action="{!quicksave}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!contacts}" var="con" id="contactTableId">
+                    <apex:column value="{!con.name}"/>
+                         <apex:column headerValue="email">
+                            <apex:inputField value="{!con.email}"/>
+                         </apex:column>        
+              </apex:pageBlockTable>     
+            </apex:pageBlockSection>
+      </apex:pageBlock>
+      <apex:panelGrid columns="2">
+          <apex:commandLink action="{!previous}">Previous</apex:commandlink>
+          <apex:commandLink action="{!next}">Next</apex:commandlink>
+      </apex:panelGrid>
+    </apex:form> 
+  </apex:pageBlock>
+</apex:page>

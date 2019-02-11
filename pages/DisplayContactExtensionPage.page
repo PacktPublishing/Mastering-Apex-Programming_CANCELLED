@@ -1,0 +1,17 @@
+<!-- 
+    @name: DisplayContactExtensionPage
+    @description: to capture and validate the Contact Phone Number
+    @author: Santanu Pal
+    @date: 10 JAN 2019
+    
+    CopyRight (c) 2019 
+-->
+
+<apex:page standardController="Contact" extensions="ContactExtension">
+    <apex:form >
+        <apex:pageMessages ></apex:pageMessages>
+        <apex:inputField value="{!Contact.Phone}"/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>
+  
+</apex:page>
