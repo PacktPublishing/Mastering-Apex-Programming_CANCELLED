@@ -2,12 +2,17 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>DisplayAccountWithCustomController</members>
+		<members>CaptureAccountInfoController</members>
+        <members>ContactExtension</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>DisplayAccountWithCustomControllerPage</members>
         <members>SaveAccountWithStandardControllerPage</members>
         <members>ShowAccountWithStandardControllerPage</members>
+		<members>CaptureAccountInfoPage</members>
+        <members>ShowAllContactsPage</members>
+        <members>DisplayContactExtensionPage</members>
         <name>ApexPage</name>
     </types>
     <types>
