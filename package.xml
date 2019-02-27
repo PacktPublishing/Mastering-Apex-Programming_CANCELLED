@@ -4,6 +4,12 @@
         <members>DisplayAccountWithCustomController</members>
 		<members>CaptureAccountInfoController</members>
         <members>ContactExtension</members>
+		<members>BusinessHoursServices</members>
+		<members>CaseTriggerHandler</members>
+		<members>CaseTriggerHandler2</members>
+		<members>LeadTriggerHandler</members>
+		<members>OpportunityLineItemTriggerHandler</members>
+		<members>Utility</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -18,6 +24,19 @@
     <types>
         <members>Account.Check_AccountNumber_Length</members>
         <name>ValidationRule</name>
-    </types>
-    <version>43.0</version>
+    </types>	
+	<types>        
+		<members>CaseTrigger</members>
+		<members>CaseTrigger2</members>
+		<members>LeadTrigger</members>
+		<members>TaskTrigger</members>
+		<members>TaskTrigger2</members>
+		<members>TaskTrigger3</members>
+		<members>trgOpportunityLineItem</members>
+		<members>trgOpportunityLineItem2</members>
+        <name>ApexTrigger</name>
+    </types> 	
+	
+	
+    <version>45.0</version>
 </Package>
