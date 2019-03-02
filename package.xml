@@ -10,6 +10,9 @@
 		<members>LeadTriggerHandler</members>
 		<members>OpportunityLineItemTriggerHandler</members>
 		<members>Utility</members>
+		<members>CustomException</members>
+        <members>ExampleOfMixedDMLClass</members>
+        <members>UtilityClass</members>
         <name>ApexClass</name>
     </types>
     <types>
