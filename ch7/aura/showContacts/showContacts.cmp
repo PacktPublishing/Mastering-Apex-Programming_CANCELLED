@@ -1,0 +1,56 @@
+<!--
+  @name: showContacts
+  @author: Santanu Pal
+  @date: 01 MAR 2019
+  @description: used to show Contact Records
+
+  CopyRight (c) 2019   
+--> 
+
+<aura:component implements="flexipage:availableForAllPageTypes" controller="ShowContactsController_NonVulnerable">
+	<aura:attribute name="contact" type="Object"/>
+    <aura:attribute name="contactColumns" type="List"/>
+    <aura:attribute name="accountName" type="String"/>
+
+    <aura:handler name="init" value="{! this }" action="{!c.doInit }"/>
+
+	<div class="slds-page-header">
+		<div class="slds-media">			
+				<div class="slds-media__figure">
+					<lightning:icon iconName="standard:survey" size="medium"/>
+				</div>
+				<div class="slds-media__body">
+  					<h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Data Table">Showing Latest Contact Records</h1>
+  					<p class="slds-text-body_small slds-truncate slds-line-height_reset">Contacts • Max 20</p>
+				</div>
+		</div>
+	</div> 
+	<br/>
+    <lightning:card title="">
+        <aura:set attribute="title">
+            <lightning:icon iconName="action:add_contact" size="small" class="slds-m-right_medium"/>
+            <span style="font-size: 1.5rem;">Contact Information</span>
+        </aura:set>
+        <lightning:layout multiplerows="true" verticalalign="center">            
+            <lightning:layoutItem padding="around-small" size="12">
+               <p>
+                   <lightning:input value="{!v.accountName}" 
+                                    onchange="{!c.doInit }" 
+                                    placeholder="enter account name..." 
+                                    label="Account Name" />
+               </p>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multiplerows="true" verticalalign="center">            
+             <lightning:layoutItem padding="around-small" size="12">
+                <div class="slds-align_absolute-center">
+                    <lightning:datatable data="{!v.contact}" 
+                                         columns="{!v.contactColumns}" 
+                                         keyField="Id"
+                                         hideCheckboxColumn="true"
+                                         />
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>				
+    </lightning:card>		
+</aura:component>

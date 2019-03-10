@@ -13,6 +13,8 @@
 		<members>CustomException</members>
         <members>ExampleOfMixedDMLClass</members>
         <members>UtilityClass</members>
+		<members>ShowContactsController_NonVulnerable</members>
+        <members>ShowContactsController</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -22,6 +24,7 @@
 		<members>CaptureAccountInfoPage</members>
         <members>ShowAllContactsPage</members>
         <members>DisplayContactExtensionPage</members>
+		<members>ShowAllContactsPage</members>
         <name>ApexPage</name>
     </types>
     <types>
@@ -38,7 +41,13 @@
 		<members>trgOpportunityLineItem</members>
 		<members>trgOpportunityLineItem2</members>
         <name>ApexTrigger</name>
-    </types> 	
+    </types>
+	<types>
+		<members>welcome</members>
+		<members>welcomeLightningApp</members>
+		<members>showContacts</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
 	
 	
     <version>45.0</version>
