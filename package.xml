@@ -15,6 +15,14 @@
         <members>UtilityClass</members>
 		<members>ShowContactsController_NonVulnerable</members>
         <members>ShowContactsController</members>
+		<members>BusinessRuleClass</members>
+        <members>DummyAccountClass</members>
+        <members>DummyAccountClassTest</members>
+        <members>ExceptionUtils</members>
+        <members>MyCustomException</members>
+        <members>MyOpportunityBatchClass</members>
+        <members>OpportunityTriggerHandler</members>
+        <members>OpportunityWebService</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -40,6 +48,7 @@
 		<members>TaskTrigger3</members>
 		<members>trgOpportunityLineItem</members>
 		<members>trgOpportunityLineItem2</members>
+		<members>OpportunityTrigger</members>
         <name>ApexTrigger</name>
     </types>
 	<types>
