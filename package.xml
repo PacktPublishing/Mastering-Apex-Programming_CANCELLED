@@ -23,6 +23,8 @@
         <members>MyOpportunityBatchClass</members>
         <members>OpportunityTriggerHandler</members>
         <members>OpportunityWebService</members>
+        <members>CheckPointTraining</members>
+        <members>SearchContactBasedOnAccountController</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -33,6 +35,7 @@
         <members>ShowAllContactsPage</members>
         <members>DisplayContactExtensionPage</members>
 		<members>ShowAllContactsPage</members>
+		<members>SearchContactBasedOnAccount</members>
         <name>ApexPage</name>
     </types>
     <types>
