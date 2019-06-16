@@ -1,0 +1,24 @@
+<!-- 
+    @name: CaptureAccountInfoPage
+    @description: to capture and upsert account record based on Account Name 
+    @author: Santanu Pal
+    @date: 2 JAN 2019
+    
+    CopyRight (c) 2019  
+-->
+<apex:page controller="CaptureAccountInfoController">
+  <apex:sectionHeader title="Edit Account" subtitle="New Account"/>
+    <apex:form >
+        <apex:pageBlock title="Account Edit" mode="edit">        
+            <apex:pageBlockButtons >
+                 <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:inputField value="{!accountObj.Name}"/>
+                <apex:inputField value="{!accountObj.AccountNumber}"/>
+                <apex:inputField value="{!accountObj.Type}"/>
+                <apex:inputField value="{!accountObj.Industry}"/>
+            </apex:pageblocksection>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
