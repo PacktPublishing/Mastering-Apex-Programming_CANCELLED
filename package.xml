@@ -25,6 +25,16 @@
         <members>OpportunityWebService</members>
         <members>CheckPointTraining</members>
         <members>SearchContactBasedOnAccountController</members>
+		<members>DisplayAccountWithCustomController</members>
+        <members>CaptureAccountInfoController</members>
+		<members>JSONSerializerController</members>
+        <members>JSONDeserializerController</members>
+        <members>JSONSerializerRestAPIController</members>
+        <members>JSONParserUtil</members>
+        <members>XMLReaderController</members>
+        <members>XMLWriterController</members>
+        <members>CSVGeneratorController</members>
+        <members>CSVParsingController</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -36,6 +46,12 @@
         <members>DisplayContactExtensionPage</members>
 		<members>ShowAllContactsPage</members>
 		<members>SearchContactBasedOnAccount</members>
+		<members>SaveAccountWithStandardControllerPage</members>
+        <members>DisplayAccountWithCustomControllerPage</members>
+        <members>CaptureAccountInfoPage</members>
+        <members>ShowAllContactsPage</members>
+		<members>CSVGeneratorPage</members>
+        <members>CSVParsingPage</members>
         <name>ApexPage</name>
     </types>
     <types>
